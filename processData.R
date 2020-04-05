@@ -351,7 +351,7 @@ handleNoisyCurves <- function(sensitivity, xp, epsilon=25 , positive.cutoff.perc
 
 require(downloader)
 drug_download <- download("https://orcestradata.blob.core.windows.net/uhn/2019/Drug_raw/2019_raw_drug.zip",  destfile="/pfs/out/2019_raw_drug.zip")
-res <- unzip(zipfile="/pfs/out/2019_raw_drug.zip", exdir = "/pfs/out")
+res <- unzip(zipfile="/pfs/out/2019_raw_drug.zip", exdir = "/pfs/out/2019_raw_drug")
 
 ###recompute sensitivity###
 setwd("/pfs/out")
